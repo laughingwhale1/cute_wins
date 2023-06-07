@@ -1,0 +1,26 @@
+/* LAYOUT STYLES FOR THIS EXACT PAGE */
+
+.wrapper {
+  margin: 0px auto;
+  width: 30vw;
+  background-color: white;
+  padding: 0px 44px 25px 44px;
+  margin-top: 1px;
+}
+
+.wrapper__element {
+  padding-top: 20px ;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 90vw;
+    padding: 0px 10px 10px 10px;
+  }
+}

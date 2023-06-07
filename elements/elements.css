@@ -93,6 +93,7 @@
   transform: rotate(135deg);
   transition: transform 0.3s ease;
   cursor: pointer;
+  pointer-events: none;
 }
 .select {
   margin-top: 10px;
@@ -102,6 +103,7 @@
   cursor: pointer;
   border: 1px solid var(--main-border-color);
   border-radius: 6px;
+  transition: .1s;
 }
 .select:hover {
   background-color: var(--main-hover-color);

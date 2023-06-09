@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../pages-layout/layout.css" />
+    <link rel="stylesheet" href="./../index.css" />
+    <link rel="stylesheet" href="./../elements/elements.css" />
+    <title>Cute Wins</title>
+    <script src="https://kit.fontawesome.com/e0add87207.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <article class="wrapper">
+      <aside class="wrapper__settings">
+        <div class="wrapper__settings-block">
+          <div class="progress">
+            <div class="progress__point1" style="background-color: var(--main-active-color)">
+              <p class="text" style="color: white">1</p>
+            </div>
+            <p class="progress__bar1"></p>
+            <div class="progress__point2"><p class="text">2</p></div>
+            <p class="progress__bar2"></p>
+            <div class="progress__point3"><p class="text">3</p></div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="wrapper__settings-block">
+          <h1 class="page__header" style="margin-bottom: 50px">Create a widget</h1>
+
+          <div class="wrapper__settings-element">
+            <p class="text">Widget name</p>
+            <input class="text__input" placeholder="Enter the name" />
+          </div>
+
+          <div class="wrapper__settings-element">
+            <p class="text">Your website URL for install</p>
+            <input class="text__input" placeholder="www.example.com" />
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="wrapper__settings-block">
+          <p class="text">Upload video</p>
+          <div class="upload">
+            <img class="upload__photo" alt="small-photo" src="../assets/small-photo.png" />
+            <label class="upload__file-upload">
+              <input type="file" />
+              Upload
+            </label>
+          </div>
+
+          <div class="wrapper__settings-element">
+            <div>
+              <p class="text" style="display: inline; margin-right: 28px">Design</p>
+              Type: <span style="font-weight: 600">landscape</span>&nbsp;&nbsp;Position:
+              <span style="font-weight: 600">Button right</span>
+            </div>
+            <div class="upload">
+              <button class="upload__edit-btn">Edit</button>
+              <div class="upload__position-rectangle"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="wrapper__settings-block">
+          <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" id="switch1" />
+            <label class="checkbox__label" for="switch1">Toggle</label>
+            <p class="text">Remove ‘Powered by ‘Mixcode’ logo</p>
+          </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="wrapper__settings-block">
+            <div class="nav-btns__wrapper">
+              <button class="nav-btn__back" style="opacity: 0;">Back</button>
+              <button class="nav-btn__next">Next</button>
+            </div>
+        </div>
+      </aside>
+
+      <section class="wrapper__result">
+        <div class="result">
+          <img class="result__photo" alt="big-photo" src="../assets/big-photo.png" />
+          <button class="result__action-btn1"><i class="fa-solid fa-pause fa-xl"></i></button>
+          <button class="result__action-btn2">0:15</button>
+          <button class="result__action-btn3"><i class="fa-solid fa-volume-high"></i></button>
+          <button class="result__action-close-btn"><i class="fa-solid fa-xmark fa-xl"></i></button>
+          <p class="text" style="text-align: center">
+            Powered by
+            <span><img style="vertical-align: bottom" src="../assets/mixcode-logo.png" alt="mixcode-logo" /></span>
+            Mixcode
+          </p>
+        </div>
+
+        <div class="preview">
+          <img class="preview__photo" alt="medium-photo" src="../assets/medium-photo.png" />
+          <button class="preview__action-close-btn"><i class="fa-solid fa-xmark fa-md"></i></button>
+          <button class="preview__action-fullscreen-btn">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          </button>
+          <div class="preview__greeting"><p class="text" style="color: white; text-align: center">Hello!</p></div>
+        </div>
+      </section>
+    </article>
+  </body>
+</html>

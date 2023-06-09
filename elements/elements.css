@@ -4,6 +4,7 @@
   font-size: 22px;
   color: var(--main-text-color);
   font-family: Arial, Helvetica, sans-serif;
+  max-width: 20rem;
 }
 
 /* default text */
@@ -44,7 +45,7 @@
 .checkbox__label:after {
   content: "";
   position: absolute;
-  top: 0.5px;
+  top: 1px;
   left: 1px;
   width: 23px;
   height: 23px;
@@ -63,6 +64,7 @@
   background-color: white;
 }
 
+
 /* custom text area */
 .textarea__input {
   margin: 10px 0px 0px 0px;
@@ -76,6 +78,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 
 /* custom select */
 .select-wrapper {
@@ -103,7 +106,7 @@
   cursor: pointer;
   border: 1px solid var(--main-border-color);
   border-radius: 6px;
-  transition: .1s;
+  transition: 0.1s;
 }
 .select:hover {
   background-color: var(--main-hover-color);
@@ -119,7 +122,7 @@
 }
 
 
-/* custop default text input */
+/* custom text input */
 .text__input {
   margin: 10px 0px 0px 0px;
   resize: none;
@@ -136,4 +139,261 @@
 /* divider */
 .divider {
   border-top: 1px solid var(--main-border-color);
+}
+
+/* action button  */
+
+/* upload video section */
+.upload {
+  position: relative;
+  display: flex;
+  border: 1px solid var(--main-border-color);
+  border-radius: 6px;
+  width: 310px;
+  min-height: 144px;
+  margin-top: 10px;
+}
+.upload__photo {
+  min-height: 142px;
+  margin: 0px auto;
+}
+
+.upload__file-upload {
+  position: absolute;
+  left: 39%;
+  top: 39%;
+  transform: translate(-50% 50%);
+  border: 1px solid var(--main-active-color);
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: white;
+  color: var(--main-active-color);
+  border-radius: 6px;
+}
+input[type="file"] {
+  display: none;
+}
+
+
+/* edit section */
+.upload__edit-btn {
+  position: absolute;
+  left: 43%;
+  top: 40%;
+  transform: translate(-50% 50%);
+  border: 1px solid var(--main-active-color);
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: white;
+  color: var(--main-active-color);
+  border-radius: 6px;
+}
+.upload__position-rectangle {
+  position: absolute;
+  width: 25px;
+  height: 45px;
+  border: 2px solid #71d99c;
+  background-color: #daeee2;
+  border-radius: 6px;
+  right: 12px;
+  bottom: 12px;
+}
+
+
+/* navigation buttons */
+.nav-btn__next {
+  border: 1px solid var(--main-active-color);
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: var(--main-active-color);
+  color: white;
+  border-radius: 6px;
+  max-height: 30px;
+}
+.nav-btn__back {
+  border: 1px solid var(--main-active-color);
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: white;
+  color: var(--main-active-color);
+  border-radius: 6px;
+  max-height: 30px;
+}
+
+/* result photo */
+.result {
+  position: absolute;
+  z-index: -1;
+  top: 19%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 22.5rem;
+  height: 35rem;
+  border-radius: 24px;
+  border: 3px solid white;
+  background-color: white;
+  padding: 2px;
+}
+
+.result__photo {
+  margin: 0px auto;
+  height: 33.7rem;
+  width: 100%;
+}
+@media screen and (max-width: 900px) {
+  .result {
+    position: absolute;
+    z-index: -1;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 22.5rem;
+    height: 35rem;
+    border-radius: 24px;
+    border: 3px solid white;
+    background-color: white;
+  }
+}
+@media screen and (max-width: 780px) {
+  .result {
+    position: absolute;
+    z-index: -1;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 22.5rem;
+    height: 35rem;
+    border-radius: 24px;
+    border: 3px solid white;
+    background-color: white;
+  }
+}
+.result__action-btn1 {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 11px;
+  background-color: #000000;
+  opacity: 0.4;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+.result__action-btn2 {
+  position: absolute;
+  color: white;
+  left: 60px;
+  top: 10px;
+  padding: 11px;
+  background-color: #000000;
+  opacity: 0.4;
+  border-radius: 6px;
+  min-height: 40px;
+  border: 1px solid black;
+}
+.result__action-btn3 {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 11px;
+  background-color: #000000;
+  opacity: 0.4;
+  border-radius: 6px;
+  min-height: 40px;
+  border: 1px solid black;
+}
+.result__action-close-btn {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: -24px;
+  top: -24px;
+  max-height: 40px;
+}
+
+/* preview photo */
+.preview {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  z-index: -1;
+}
+.preview__action-close-btn {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  padding: 0px;
+}
+.preview__action-fullscreen-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid white;
+  padding: 0px;
+  background-color: transparent;
+  border-radius: 6px;
+}
+.preview__greeting {
+  position: absolute;
+  top: 8px;
+  left: -25px;
+  padding: 17px 8px 12px 8px;
+  background-color: var(--main-active-color);
+  width: 45px;
+  height: 20px;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+}
+
+/* progress bar */
+.progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.progress__point1 {
+  padding: 11px 13px 11px 13px;
+  background-color: var(--main-inactive-color);
+  border-radius: 50%;
+}
+.progress__point2 {
+  padding: 11px 13px 11px 13px;
+  background-color: var(--main-inactive-color);
+  border-radius: 50%;
+}
+.progress__point3 {
+  padding: 11px 13px 11px 13px;
+  background-color: var(--main-inactive-color);
+  border-radius: 50%;
+}
+.progress__bar1 {
+  height: 2px;
+  background-color: var(--main-inactive-color);
+  flex-grow: 1;
+}
+.progress__bar2 {
+  height: 2px;
+  background-color: var(--main-inactive-color);
+  flex-grow: 1;
 }

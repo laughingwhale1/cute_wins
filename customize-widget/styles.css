@@ -2,10 +2,12 @@
 
 .wrapper {
   margin: 0px auto;
-  width: 30vw;
+  width: 22vw;
+  max-width: 22vw;
   background-color: white;
   padding: 0px 44px 25px 44px;
   margin-top: 1px;
+  box-sizing: border-box;
 }
 
 .wrapper__element {
@@ -14,7 +16,7 @@
 
 @media screen and (max-width: 900px) {
   .wrapper {
-    width: 60vw;
+    width: 40vw;
   }
 }
 

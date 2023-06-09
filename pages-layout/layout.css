@@ -1,0 +1,123 @@
+.wrapper {
+  display: grid;
+  grid-template-areas: "settings result";
+  grid-template-columns: auto 1fr;
+  transition: all 0.3s;
+  max-height: 100vh;
+  box-sizing: border-box;
+}
+.wrapper__settings {
+  grid-area: settings;
+  transition: all 0.3s;
+  min-width: 25rem;
+  height: 100vh;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper__settings-block {
+  background-color: white;
+  opacity: 1;
+  padding: 1.563rem 2.75rem 1.563rem 2.75rem;
+  box-sizing: border-box;
+}
+.wrapper__settings-block:last-of-type {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 2.75rem 10px 2.75rem;
+  /* flex-grow: 1; */
+}
+.wrapper__settings-block:nth-last-child(3) {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 2.75rem 10px 2.75rem;
+  flex-grow: 1;
+}
+
+.wrapper__settings-element {
+  margin-top: 1.25rem;
+}
+
+.nav-btns__wrapper {
+  width: 100%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper__result {
+  grid-area: result;
+  position: relative;
+  transition: all 0.3s;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper__settings {
+    max-width: 44vw;
+    min-width: 18.75rem;
+  }
+  .wrapper__settings-block {
+    padding: 0.938rem 1.5rem 0.938rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .wrapper {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .wrapper__settings {
+    max-width: 10vw;
+    background-color: white;
+    min-width: 10vw;
+  }
+
+  .wrapper__settings-block {
+    display: none;
+  }
+  .nav-btns__wrapper {
+    display: none;
+  }
+  .wrapper__settings-block:last-of-type {
+    display: none;
+  }
+  .wrapper__settings-block:nth-last-child(3) {
+    display: none;
+  }
+  .wrapper__settings:hover {
+    /* тут макс на мин заменить  */
+    min-width: 85vw;
+  }
+  .wrapper__settings:hover,
+  .wrapper__settings-block {
+    background-color: white;
+  }
+  .wrapper__settings:hover > .wrapper__settings-block {
+    display: block;
+    background-color: white;
+    padding: 1.25rem 0.625rem 1.25rem 0.625rem;
+  }
+  .wrapper__settings:hover > .wrapper__settings-block > .nav-btns__wrapper {
+    display: block;
+    width: 100%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+  }
+  .wrapper__settings:hover > .wrapper__settings-block:last-of-type {
+    display: flex;
+    flex-direction: row;
+    padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+    /* flex-grow: 1; */
+  }
+  .wrapper__settings:hover > .wrapper__settings-block:nth-last-child(3) {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 2.75rem 10px 2.75rem;
+    flex-grow: 1;
+  }
+}
